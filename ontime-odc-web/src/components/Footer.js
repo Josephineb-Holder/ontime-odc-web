@@ -14,23 +14,25 @@ const Footer = () => {
       <footer className="bg-black text-gray-400 p-7 flex flex-col lg:flex-row">
         <div className="flex flex-col lg:flex-row items-center lg:ml-20 ml-5">
           <div className="bg-white w-32 h-10 text-center m-5 ">
-            <a className="text-black w-20 text-center" href="/download">
-              <FontAwesomeIcon
+            <a className="text-black flex " href="/download">
+              {/* <FontAwesomeIcon
                 icon={faApple}
                 size="2xl"
                 style={{ color: "#0d0d0d", marginRight: "10" }}
-              />
-              App Store
+              /> */}
+               <img className="w-10 p-1" src="/images/apple.png"></img>
+              <p className="text-black text-sm mr-2"><small>Get it on</small><br/> App Store</p>
             </a>
           </div>
           <div className="bg-white w-32 h-10 text-center m-5">
-            <a className="text-black" href="/download">
-              <FontAwesomeIcon
+            <a className="text-black flex " href="/download">
+              {/* <FontAwesomeIcon
                 icon={faGooglePlay}
                 size="2xl"
                 style={{ color: "#000000", marginRight: "10" }}
-              />
-              Play Store
+              /> */}
+              <img className="w-10 mb-5" src="/images/playstoreicon.png" alt="play store icon"></img>
+              <p className="text-black text-sm mr-2"><small>Get it on</small> <br/>Google Play</p>
             </a>
           </div>
         </div>

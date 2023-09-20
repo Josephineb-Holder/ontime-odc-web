@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faApple,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   const ImgData = [
@@ -64,11 +68,14 @@ const Home = () => {
                 registration process, improve security, and offer insight
                 through the visitor tricking.
               </p>
-              <button className="m-2 bg-orange-500 sm:p-4 p-2 rounded-2xl text-white font-bold hover:bg-orange-300 hover:text-black">
-                <Link to="/download">Apple Store</Link>
+              <button className="m-1 bg-black sm:p-2 p-2 rounded-md text-white font-bold hover:bg-orange-300 hover:text-black">
+                <Link to="/download" className="flex"> 
+                <img className="w-10 p-1 " src="/images/applelogo.png" alt="play store icon"></img>
+              <p className="text-white text-sm mr-2"><small>Get it on</small><br/> App Store</p></Link>
               </button>
-              <button className="m-2 bg-orange-500 sm:p-4 p-2 rounded-2xl text-white font-bold hover:bg-orange-300 hover:text-black">
-                <Link to="/download">PlayStore Store</Link>
+              <button className="m-2 bg-black sm:p-2 p-2 rounded-md text-white font-bold hover:bg-orange-300 hover:text-black">
+                <Link to="/download" className="flex"> <img className="w-10 " src="/images/playstoreicon.png" alt="play store icon"></img>
+              <p className="text-white text-sm mr-2"><small>Get it on</small> <br/>Google Play</p></Link>
               </button>
             </div>
             <img src="/images/ontimeart.jpg" alt="Ontime App Page Sample"></img>
